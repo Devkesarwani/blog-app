@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+
+<div class="post-container" id="animate-me">
+  <h1 class="post-title"><%= title %></h1>
+  <p class="post-content"><%=content%></p>
+</div>
+
+<%- include("partials/footer"); -%>
+
+<script>
+  gsap.from("#animate-me", { opacity: 0, scale: 0.8, duration: 1, ease: "power2.out" });
+</script>

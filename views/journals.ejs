@@ -1,0 +1,32 @@
+<%- include("partials/header"); -%>
+<h1>Journals</h1>
+
+<% posts.forEach(function(post){ %>
+
+<div class="post-container" id="animate-me">
+  <h1 class="post-title"><%= post.title %></h1>
+  <p class="post-content">
+    <%= post.content.substring(0, 200) + " ..." %>
+    <a class="read-more" href="/journals/<%= post._id %>">Read More</a>
+  </p>
+</div>
+
+<% }) %> 
+
+<% if (!isAuthenticated) { %>
+<div style="display: flex; justify-content:center; align-items: center; padding-top: 50px;">
+    <p style="font-weight: bolder; color: yellow;">Log in to explore more journals!&nbsp;</p>
+    <a  class="login" href="/login">LOG IN</a>
+</div>
+<% } %> 
+
+<%- include("partials/footer"); -%>
+
+<script>
+  gsap.from("#animate-me", {
+    opacity: 0,
+    scale: 0.8,
+    duration: 1,
+    ease: "power2.out",
+  });
+</script>

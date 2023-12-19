@@ -1,0 +1,209 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 20px 40px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  background: #fafafa;
+  background-color: #00453f;
+  background-image: url("https://www.transparenttextures.com/patterns/gravel.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+a,
+p,
+input,
+label,
+button,
+div,
+footer {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 120px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  margin-left: 20px;
+}
+nav li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 1px;
+}
+.btn {
+  border-radius: 36px;
+  background: #f7f022;
+  color: rgb(0, 0, 0);
+}
+.btn:hover {
+  background: #dcd50d;
+}
+.name {
+  color: #dcd50d;
+  font-weight: bolder;
+}
+
+form h2 {
+  font-size: 2.4em;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+form {
+  width: 360px;
+  margin: 0 auto;
+  padding: 30px;
+  /* box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.356);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.419);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px; */
+}
+input,
+textarea {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(245, 228, 36, 0.378);
+}
+label {
+  display: block;
+  margin: 20px 0 10px;
+}
+button {
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #f7f022;
+  color: black;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}
+.error {
+  color: #ffdd00;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 250px;
+  margin-right: 40px;
+}
+header h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+header h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: #999;
+}
+header .btn {
+  margin-top: 20px;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 120px;
+  color: #d9d9d9;
+}
+
+.line:hover {
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-offset: auto;
+}
+.textContent {
+  color: black;
+}
+.compose {
+  display: flex;
+  justify-content: space-evenly;
+}
+.size {
+  width: 500px;
+  height: 500px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.post-container {
+  background: rgba(0, 0, 0, 0.572);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(245, 228, 36, 0.378);
+}
+
+.post-title {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  font-weight: bold;
+}
+.login {
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 10px 16px;
+  letter-spacing: 1px;
+  border-radius: 36px;
+  background: #f7f022;
+  color: rgb(0, 0, 0);
+}
+
+.login:hover {
+  background: #dcd50d;
+}

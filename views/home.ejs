@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+
+<header>
+  <div class="smoothie">
+    <img src="/notes_7454761.png" alt="">
+  </div>
+  <div class="headings">
+    <h2 id="animate-me">Daily Journals</h2>
+    <!-- <h3>By @</h3 -->
+    <a href="/compose" class="btn">Write Journal</a>
+  </div>
+</header>
+
+<%- include('partials/footer'); -%>
+
+<!-- Your custom script for GSAP animation -->
+<script>
+  gsap.from("#animate-me", { opacity: 0, rotation: 360, duration: 1, ease: "power2.out" });
+</script>
